@@ -5,7 +5,7 @@
 <script language='javascript'>
     var Language='ru';
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <meta http-equiv="Content-Language" content="ru">
 <META NAME=ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -35,14 +35,14 @@ function DoCalc (u,p){
     P=p*220/u;
 
     res="";
-   // res+="<h3>Исходные данные для расчета:</h3>";
-    //res+="Совокупная потребляемая мощность: <b>"+p+"</b> кВт<br>";
-   // res+="Нижний предел напряжения: <b>"+u+"</b> В<br><br>";
-    //res+="<h3>Результат расчета:</h3>";
+   // res+="<h3>РСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ РґР»СЏ СЂР°СЃС‡РµС‚Р°:</h3>";
+    //res+="РЎРѕРІРѕРєСѓРїРЅР°СЏ РїРѕС‚СЂРµР±Р»СЏРµРјР°СЏ РјРѕС‰РЅРѕСЃС‚СЊ: <b>"+p+"</b> РєР’С‚<br>";
+   // res+="РќРёР¶РЅРёР№ РїСЂРµРґРµР» РЅР°РїСЂСЏР¶РµРЅРёСЏ: <b>"+u+"</b> Р’<br><br>";
+    //res+="<h3>Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚Р°:</h3>";
     if (P>0 && p!=0 && u!=0) 
-      res+="<style='margin:0em;'><font color=purple>Необходимая мощность стабилизатора<p><span style='font-size:2em;'>"+Math.floor(P*10+0.5)/10+"</span> кВт<br>";
+      res+="<style='margin:0em;'><font color=purple>РќРµРѕР±С…РѕРґРёРјР°СЏ РјРѕС‰РЅРѕСЃС‚СЊ СЃС‚Р°Р±РёР»РёР·Р°С‚РѕСЂР°<p><span style='font-size:2em;'>"+Math.floor(P*10+0.5)/10+"</span> РєР’С‚<br>";
     else
-      res+="<font color=red>Ошибка входных данных.<br> Введите корректно числа.</font><br>";
+      res+="<font color=red>РћС€РёР±РєР° РІС…РѕРґРЅС‹С… РґР°РЅРЅС‹С….<br> Р’РІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅРѕ С‡РёСЃР»Р°.</font><br>";
     
       document.getElementById('CalcRes').innerHTML=res;
 //    alert(res);
@@ -51,7 +51,7 @@ function DoCalc (u,p){
 // -->
 </SCRIPT>
 
-            	<font size="3" color="#000080">Расчет стабилизатора</font></b><FORM>
+            	<font size="3" color="#000080">Р Р°СЃС‡РµС‚ СЃС‚Р°Р±РёР»РёР·Р°С‚РѕСЂР°</font></b><FORM>
             <TABLE border=0 width="326">
               <TBODY>
               <TR>
@@ -60,21 +60,21 @@ function DoCalc (u,p){
                     <TBODY>
                     <TR>
                       <TD vAlign=bottom><b>
-						<font size="2" color="#800080">Совокупная потребляемая 
-						мощность нагрузки (кВт): 
+						<font size="2" color="#800080">РЎРѕРІРѕРєСѓРїРЅР°СЏ РїРѕС‚СЂРµР±Р»СЏРµРјР°СЏ 
+						РјРѕС‰РЅРѕСЃС‚СЊ РЅР°РіСЂСѓР·РєРё (РєР’С‚): 
                       </font></b> 
                       <TD vAlign=bottom align=right><INPUT size=5 value=3.5 
                         name=p> 
                     <TR>
                       <TD vAlign=bottom><b>
-						<font size="2" color="#800080">Нижний предел напряжения 
-						в сети электропитания (В): 
+						<font size="2" color="#800080">РќРёР¶РЅРёР№ РїСЂРµРґРµР» РЅР°РїСЂСЏР¶РµРЅРёСЏ 
+						РІ СЃРµС‚Рё СЌР»РµРєС‚СЂРѕРїРёС‚Р°РЅРёСЏ (Р’): 
                       </font></b> 
                       <TD vAlign=bottom align=right><INPUT size=5 value=160 
                         name=u> 
                     <TR>
                       <TD vAlign=bottom align=right colSpan=2>
-						<INPUT onclick="DoCalc(this.form.u.value, this.form.p.value);" type=button value=Рассчитать style="font-family: Century Gothic; font-size: 10pt; font-weight: bold; color: #800080"> 
+						<INPUT onclick="DoCalc(this.form.u.value, this.form.p.value);" type=button value=Р Р°СЃСЃС‡РёС‚Р°С‚СЊ style="font-family: Century Gothic; font-size: 10pt; font-weight: bold; color: #800080"> 
                     </TR></TBODY></TABLE>
                 <TD id=CalcRes vAlign=top></TR></TBODY></TABLE></FORM>
     	    	<br></span>
