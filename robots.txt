@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: http://stabilizator.donetsk.ua/sitemap.xml
+Disallow: /_private/
+Disallow: /files/
+Disallow: /ban1.htm
+Disallow: /calc1.html
+Disallow: /table2.html
+Disallow: /menu.htm
+Disallow: /menu1.htm
+Disallow: /menu2.htm
+Disallow: /menu3.htm
+Disallow: /menu4.htm

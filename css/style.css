@@ -1,0 +1,50 @@
+body {
+	background-image: url(../images/background.gif); font: 12px/normal Verdana; margin: 0px; padding: 30px; text-align: left; color: rgb(0, 0, 0); font-size-adjust: none; font-stretch: normal;
+}
+h1 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h2 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h3 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h4 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+.menu {
+	width: 248px; padding-top: 15%;
+}
+.menu h2 {
+	background: url(../images/cube.gif) no-repeat left;
+}
+.menu a {
+	margin: 0px; padding: 5px 5px 5px 15px; color: rgb(0, 0, 255); font-size: 12px; font-weight: bold; display: block; cursor: pointer; text-decoration: none;
+}
+.menu a:hover {
+			text-decoration: none;
+			color: rgb(178, 34, 34);
+}
+.menu a:active {
+			text-decoration: none;
+			color: rgb(255, 0, 0);
+}
+.menu h1 {
+	margin: 0px; padding: 5px 5px 5px 15px; color: rgb(139,58,58); font-size: 14px; font-weight: bold; display: block; cursor: default;
+}
+.menu h3 {
+	margin: 0px; padding: 5px 5px 5px 17px; color: rgb(0,0,139); font-size: 12px; font-weight: bold; display: block; cursor: pointer;
+}
+.menu h3 {
+	background: url(../images/strelka1.gif) no-repeat left;
+}
+.open {
+	background: url(../images/strelka2.gif) no-repeat left !important;
+}
+.menu-hidden {
+	padding: 5px 5px 5px 20px; display: none;
+}
+.menu-hidden a {
+	padding: 5px; font-weight: normal;
+}

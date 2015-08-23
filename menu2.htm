@@ -1,0 +1,54 @@
+
+<html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<META NAME=ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<title>menu2</title>
+
+<head>
+	<title>Меню</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<link rel="stylesheet" href="css/style2.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function() {
+			$('.menu h3').click(function(){$(this).next('.menu-hidden').slideToggle();$(this).toggleClass('open');});
+		});
+		$(document).ready(function() {
+			$('.menu h3').click(function(){$(this).next('.menu-hidden1').slideToggle();$(this).toggleClass('open');});
+		});
+	</script>
+	<base target="_top">
+</head>
+<body>
+
+<div class="menu">
+	<h2><a href="index.html">Главная</a></h2>
+	<h2><a href="map.html">Карта сайта</a></h2>
+	<h2><a href="tupes.html">Типы стабилизаторов</a></h2>
+	<h2><a href="review.html">Обзор стабилизаторов</a></h2>
+	<h2><a href="choice.html">Выбор стабилизатора</a></h2>
+	<h2><a href="choice1.html">Расчёт нагрузки</a></h2>
+	<h1>Модельный ряд :</h1>
+	<h3>Симисторные</h3>
+	<div class="menu-hidden">
+	<a href="modul1-9.html">1 диапазонные 9 ступеней</a>
+	<a href="modul2-11.html">2 диапазонные 11 ступеней</a>
+	<a href="modul1-16.html">1 диапазонные 16 ступеней</a>
+	<a href="modul2-19.html">2 диапазонные 19 ступеней</a>
+	<a href="modul3-22.html">3 диапазонные 22 ступени</a>
+	</div>
+	<h3>Релейные</h3>
+	<div class="menu-hidden1">
+	<a href="relay-class.html">Классика</a> <a href="relay-shd.html">Широкодиапазонные</a>
+	<a href="relay-sshd.html">Сверхширокодиапазонные</a>
+	</div>
+	<h2><a href="prices.html">Цены</a></h2>
+	<h2><a href="contact.html">Контакты</a></h2>
+	<h2><a href="questions.html">Вопросы и ответы</a></h2>
+</div>
+
+</body>
+
+</html>

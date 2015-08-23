@@ -1,0 +1,84 @@
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD html 4.0 Transitional//EN">
+<html lang="ru">
+<head>
+<script language='javascript'>
+    var Language='ru';
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<meta http-equiv="Content-Language" content="ru">
+<META NAME=ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<title>calc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="images/background.gif">
+<table width="22%" height="25%" border="0" cellpadding="0" cellspacing="0">
+	
+    	    	<td width="95%" valign=top  bgcolor=#FFFFFF style="padding:4;" background="images/background.gif">
+				&nbsp;<span id=page>
+    	    	<b>
+    	    	<SCRIPT language=JavaScript>
+<!--
+
+function DoCalc (u,p){
+  var P;
+  var res;
+
+  if ((i = p.indexOf(','))>=0) p= p.substring(0,i)+'.'+p.substring(i+1,p.length);
+  if ((i = u.indexOf(','))>=0) u= u.substring(0,i)+'.'+u.substring(i+1,u.length);
+
+    P=p*220/u;
+
+    res="";
+   // res+="<h3>Исходные данные для расчета:</h3>";
+    //res+="Совокупная потребляемая мощность: <b>"+p+"</b> кВт<br>";
+   // res+="Нижний предел напряжения: <b>"+u+"</b> В<br><br>";
+    //res+="<h3>Результат расчета:</h3>";
+    if (P>0 && p!=0 && u!=0) 
+      res+="<style='margin:0em;'><font color=purple>Необходимая мощность стабилизатора<p><span style='font-size:2em;'>"+Math.floor(P*10+0.5)/10+"</span> кВт<br>";
+    else
+      res+="<font color=red>Ошибка входных данных.<br> Введите корректно числа.</font><br>";
+    
+      document.getElementById('CalcRes').innerHTML=res;
+//    alert(res);
+}
+
+// -->
+</SCRIPT>
+
+            	<font size="3" color="#000080">Расчет стабилизатора</font></b><FORM>
+            <TABLE border=0 width="326">
+              <TBODY>
+              <TR>
+                <TD style="PADDING-RIGHT: 2em" vAlign=top width="240">
+                  <TABLE border=0 width="321">
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=bottom><b>
+						<font size="2" color="#800080">Совокупная потребляемая 
+						мощность нагрузки (кВт): 
+                      </font></b> 
+                      <TD vAlign=bottom align=right><INPUT size=5 value=3.5 
+                        name=p> 
+                    <TR>
+                      <TD vAlign=bottom><b>
+						<font size="2" color="#800080">Нижний предел напряжения 
+						в сети электропитания (В): 
+                      </font></b> 
+                      <TD vAlign=bottom align=right><INPUT size=5 value=160 
+                        name=u> 
+                    <TR>
+                      <TD vAlign=bottom align=right colSpan=2>
+						<INPUT onclick="DoCalc(this.form.u.value, this.form.p.value);" type=button value=Рассчитать style="font-family: Century Gothic; font-size: 10pt; font-weight: bold; color: #800080"> 
+                    </TR></TBODY></TABLE>
+                <TD id=CalcRes vAlign=top></TR></TBODY></TABLE></FORM>
+    	    	<br></span>
+		</table>
+</table>
+</body>
+</html>
